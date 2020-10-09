@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
@@ -9,11 +10,13 @@ namespace XMLWeather
     {
         public string date, currentTemp, currentTime, condition, location, tempHigh, tempLow, 
             windSpeed, windDirection, precipitation, visibility;
-
+        public Image image, backImage;
         public Day()
         {
             date = currentTemp = currentTime = condition = location = tempHigh = tempLow
-                = windSpeed = windDirection = precipitation = visibility = "";
+                = windSpeed = windDirection = precipitation = visibility =  "";
+            image = null;
+            backImage = null;
         }
     }
 }
