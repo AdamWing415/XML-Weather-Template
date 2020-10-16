@@ -20,8 +20,8 @@ namespace XMLWeather
         public void displayForecast()
         {
             date1.Text = Form1.days[1].date;
-            min1.Text = Math.Round(Convert.ToDecimal(Form1.days[1].tempLow)) + "°C";
-            max1.Text = Math.Round(Convert.ToDecimal(Form1.days[1].tempHigh)) + "°C";
+            min1.Text = Math.Round(Convert.ToDecimal(Form1.days[1].tempLow)) + "°";
+            max1.Text = Math.Round(Convert.ToDecimal(Form1.days[1].tempHigh)) + "°";
             picBox1.Image = Form1.days[1].image;
             conditionLabel.Text = Form1.days[1].condition;
 

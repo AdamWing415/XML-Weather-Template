@@ -46,12 +46,12 @@
             this.date5 = new System.Windows.Forms.Label();
             this.max5 = new System.Windows.Forms.Label();
             this.min5 = new System.Windows.Forms.Label();
+            this.conditionLabel = new System.Windows.Forms.Label();
             this.picBox5 = new System.Windows.Forms.PictureBox();
             this.picBox4 = new System.Windows.Forms.PictureBox();
             this.picBox3 = new System.Windows.Forms.PictureBox();
             this.picBox2 = new System.Windows.Forms.PictureBox();
             this.picBox1 = new System.Windows.Forms.PictureBox();
-            this.conditionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox3)).BeginInit();
@@ -110,6 +110,7 @@
             // 
             // label5
             // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(187, 28);
@@ -123,6 +124,7 @@
             // date1
             // 
             this.date1.AutoSize = true;
+            this.date1.BackColor = System.Drawing.Color.Transparent;
             this.date1.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date1.ForeColor = System.Drawing.Color.White;
             this.date1.Location = new System.Drawing.Point(9, 84);
@@ -135,6 +137,7 @@
             // date2
             // 
             this.date2.AutoSize = true;
+            this.date2.BackColor = System.Drawing.Color.Transparent;
             this.date2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date2.ForeColor = System.Drawing.Color.White;
             this.date2.Location = new System.Drawing.Point(9, 297);
@@ -171,6 +174,7 @@
             // date4
             // 
             this.date4.AutoSize = true;
+            this.date4.BackColor = System.Drawing.Color.Transparent;
             this.date4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date4.ForeColor = System.Drawing.Color.White;
             this.date4.Location = new System.Drawing.Point(9, 396);
@@ -207,6 +211,7 @@
             // date3
             // 
             this.date3.AutoSize = true;
+            this.date3.BackColor = System.Drawing.Color.Transparent;
             this.date3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date3.ForeColor = System.Drawing.Color.White;
             this.date3.Location = new System.Drawing.Point(9, 346);
@@ -243,6 +248,7 @@
             // date5
             // 
             this.date5.AutoSize = true;
+            this.date5.BackColor = System.Drawing.Color.Transparent;
             this.date5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date5.ForeColor = System.Drawing.Color.White;
             this.date5.Location = new System.Drawing.Point(9, 446);
@@ -276,51 +282,6 @@
             this.min5.TabIndex = 76;
             this.min5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // picBox5
-            // 
-            this.picBox5.Location = new System.Drawing.Point(147, 443);
-            this.picBox5.Name = "picBox5";
-            this.picBox5.Size = new System.Drawing.Size(40, 30);
-            this.picBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBox5.TabIndex = 83;
-            this.picBox5.TabStop = false;
-            // 
-            // picBox4
-            // 
-            this.picBox4.Location = new System.Drawing.Point(147, 393);
-            this.picBox4.Name = "picBox4";
-            this.picBox4.Size = new System.Drawing.Size(40, 30);
-            this.picBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBox4.TabIndex = 82;
-            this.picBox4.TabStop = false;
-            // 
-            // picBox3
-            // 
-            this.picBox3.Location = new System.Drawing.Point(147, 343);
-            this.picBox3.Name = "picBox3";
-            this.picBox3.Size = new System.Drawing.Size(40, 30);
-            this.picBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBox3.TabIndex = 81;
-            this.picBox3.TabStop = false;
-            // 
-            // picBox2
-            // 
-            this.picBox2.Location = new System.Drawing.Point(147, 296);
-            this.picBox2.Name = "picBox2";
-            this.picBox2.Size = new System.Drawing.Size(40, 30);
-            this.picBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBox2.TabIndex = 80;
-            this.picBox2.TabStop = false;
-            // 
-            // picBox1
-            // 
-            this.picBox1.Location = new System.Drawing.Point(19, 150);
-            this.picBox1.Name = "picBox1";
-            this.picBox1.Size = new System.Drawing.Size(139, 140);
-            this.picBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBox1.TabIndex = 79;
-            this.picBox1.TabStop = false;
-            // 
             // conditionLabel
             // 
             this.conditionLabel.BackColor = System.Drawing.Color.Transparent;
@@ -333,11 +294,63 @@
             this.conditionLabel.TabIndex = 84;
             this.conditionLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // picBox5
+            // 
+            this.picBox5.BackColor = System.Drawing.Color.Transparent;
+            this.picBox5.Location = new System.Drawing.Point(147, 443);
+            this.picBox5.Name = "picBox5";
+            this.picBox5.Size = new System.Drawing.Size(40, 30);
+            this.picBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBox5.TabIndex = 83;
+            this.picBox5.TabStop = false;
+            // 
+            // picBox4
+            // 
+            this.picBox4.BackColor = System.Drawing.Color.Transparent;
+            this.picBox4.Location = new System.Drawing.Point(147, 393);
+            this.picBox4.Name = "picBox4";
+            this.picBox4.Size = new System.Drawing.Size(40, 30);
+            this.picBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBox4.TabIndex = 82;
+            this.picBox4.TabStop = false;
+            // 
+            // picBox3
+            // 
+            this.picBox3.BackColor = System.Drawing.Color.Transparent;
+            this.picBox3.Location = new System.Drawing.Point(147, 343);
+            this.picBox3.Name = "picBox3";
+            this.picBox3.Size = new System.Drawing.Size(40, 30);
+            this.picBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBox3.TabIndex = 81;
+            this.picBox3.TabStop = false;
+            // 
+            // picBox2
+            // 
+            this.picBox2.BackColor = System.Drawing.Color.Transparent;
+            this.picBox2.Location = new System.Drawing.Point(147, 296);
+            this.picBox2.Name = "picBox2";
+            this.picBox2.Size = new System.Drawing.Size(40, 30);
+            this.picBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBox2.TabIndex = 80;
+            this.picBox2.TabStop = false;
+            // 
+            // picBox1
+            // 
+            this.picBox1.BackColor = System.Drawing.Color.Transparent;
+            this.picBox1.Location = new System.Drawing.Point(19, 150);
+            this.picBox1.Name = "picBox1";
+            this.picBox1.Size = new System.Drawing.Size(139, 140);
+            this.picBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBox1.TabIndex = 79;
+            this.picBox1.TabStop = false;
+            // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::XMLWeather.Properties.Resources.snow_blur_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Controls.Add(this.conditionLabel);
             this.Controls.Add(this.picBox5);
             this.Controls.Add(this.picBox4);

@@ -121,6 +121,45 @@
   <ItemGroup>
     <None Include="Resources\weather-sun.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloudy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foggy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lightning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear%28blur%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloudy%28blur%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foggy%28blur%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lightning%28blur%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rain%28blur%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snow%28blur%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
