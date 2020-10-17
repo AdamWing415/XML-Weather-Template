@@ -24,8 +24,9 @@ namespace XMLWeather
             minOutput.Text = Math.Round(Convert.ToDecimal(Form1.days[0].tempLow)) + "°";
             maxOutput.Text = Math.Round(Convert.ToDecimal(Form1.days[0].tempHigh)) + "°";
            
-            picBox1.Image = Form1.days[0].image;
+         
             conditionLabel.Text = Form1.days[0].condition;
+            this.BackgroundImage = Form1.days[0].backImage;
         }
 
         private void forecastLabel_Click(object sender, EventArgs e)

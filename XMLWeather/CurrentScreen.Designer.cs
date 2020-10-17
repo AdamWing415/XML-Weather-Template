@@ -36,10 +36,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.forecastLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.picBox1 = new System.Windows.Forms.PictureBox();
             this.conditionLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -47,7 +45,7 @@
             this.cityOutput.BackColor = System.Drawing.Color.Transparent;
             this.cityOutput.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityOutput.ForeColor = System.Drawing.Color.White;
-            this.cityOutput.Location = new System.Drawing.Point(13, 74);
+            this.cityOutput.Location = new System.Drawing.Point(13, 69);
             this.cityOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cityOutput.Name = "cityOutput";
             this.cityOutput.Size = new System.Drawing.Size(301, 33);
@@ -58,8 +56,8 @@
             // 
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
             this.maxOutput.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maxOutput.ForeColor = System.Drawing.Color.Coral;
-            this.maxOutput.Location = new System.Drawing.Point(242, 142);
+            this.maxOutput.ForeColor = System.Drawing.Color.Red;
+            this.maxOutput.Location = new System.Drawing.Point(252, 142);
             this.maxOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(112, 51);
@@ -71,7 +69,7 @@
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
             this.minOutput.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minOutput.ForeColor = System.Drawing.Color.Turquoise;
-            this.minOutput.Location = new System.Drawing.Point(242, 92);
+            this.minOutput.Location = new System.Drawing.Point(252, 92);
             this.minOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(112, 50);
@@ -97,7 +95,7 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(28, 17);
+            this.label3.Location = new System.Drawing.Point(28, 12);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 34);
@@ -110,7 +108,7 @@
             this.forecastLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forecastLabel.ForeColor = System.Drawing.Color.White;
             this.forecastLabel.Image = ((System.Drawing.Image)(resources.GetObject("forecastLabel.Image")));
-            this.forecastLabel.Location = new System.Drawing.Point(204, 17);
+            this.forecastLabel.Location = new System.Drawing.Point(204, 12);
             this.forecastLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.forecastLabel.Name = "forecastLabel";
             this.forecastLabel.Size = new System.Drawing.Size(110, 34);
@@ -124,7 +122,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(13, 28);
+            this.label1.Location = new System.Drawing.Point(13, 23);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 33);
@@ -132,29 +130,18 @@
             this.label1.Text = "____________________________";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // picBox1
-            // 
-            this.picBox1.BackColor = System.Drawing.Color.Transparent;
-            this.picBox1.Image = global::XMLWeather.Properties.Resources.weather_snow;
-            this.picBox1.Location = new System.Drawing.Point(234, 196);
-            this.picBox1.Name = "picBox1";
-            this.picBox1.Size = new System.Drawing.Size(100, 100);
-            this.picBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBox1.TabIndex = 43;
-            this.picBox1.TabStop = false;
-            // 
             // conditionLabel
             // 
             this.conditionLabel.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel.ForeColor = System.Drawing.Color.White;
-            this.conditionLabel.Location = new System.Drawing.Point(138, 299);
+            this.conditionLabel.Location = new System.Drawing.Point(209, 206);
             this.conditionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.conditionLabel.Name = "conditionLabel";
-            this.conditionLabel.Size = new System.Drawing.Size(192, 52);
+            this.conditionLabel.Size = new System.Drawing.Size(127, 50);
             this.conditionLabel.TabIndex = 65;
-            this.conditionLabel.Text = "condition";
-            this.conditionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.conditionLabel.Text = "Thunder";
+            this.conditionLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
             // 
@@ -163,7 +150,7 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(-6, 0);
+            this.label2.Location = new System.Drawing.Point(-6, -5);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(339, 74);
@@ -177,7 +164,6 @@
             this.BackgroundImage = global::XMLWeather.Properties.Resources.snow;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Controls.Add(this.conditionLabel);
-            this.Controls.Add(this.picBox1);
             this.Controls.Add(this.maxOutput);
             this.Controls.Add(this.minOutput);
             this.Controls.Add(this.cityOutput);
@@ -189,7 +175,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(333, 492);
-            ((System.ComponentModel.ISupportInitialize)(this.picBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,7 +186,6 @@
         private System.Windows.Forms.Label currentOutput;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label forecastLabel;
-        private System.Windows.Forms.PictureBox picBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label conditionLabel;
         private System.Windows.Forms.Label label2;

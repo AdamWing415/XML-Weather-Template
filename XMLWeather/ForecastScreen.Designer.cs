@@ -64,7 +64,7 @@
             this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
             this.forecastLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(204, 17);
+            this.forecastLabel.Location = new System.Drawing.Point(204, 12);
             this.forecastLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.forecastLabel.Name = "forecastLabel";
             this.forecastLabel.Size = new System.Drawing.Size(110, 34);
@@ -76,7 +76,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(29, 17);
+            this.label3.Location = new System.Drawing.Point(29, 12);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 34);
@@ -100,12 +100,13 @@
             // 
             this.max1.BackColor = System.Drawing.Color.Transparent;
             this.max1.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.max1.ForeColor = System.Drawing.Color.LightCoral;
+            this.max1.ForeColor = System.Drawing.Color.Red;
             this.max1.Location = new System.Drawing.Point(244, 150);
             this.max1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.max1.Name = "max1";
             this.max1.Size = new System.Drawing.Size(104, 55);
             this.max1.TabIndex = 45;
+            this.max1.Text = "77\'";
             this.max1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
@@ -113,7 +114,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(187, 28);
+            this.label5.Location = new System.Drawing.Point(187, 23);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(127, 33);
@@ -163,12 +164,13 @@
             // 
             this.max2.BackColor = System.Drawing.Color.Transparent;
             this.max2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.max2.ForeColor = System.Drawing.Color.LightCoral;
+            this.max2.ForeColor = System.Drawing.Color.Red;
             this.max2.Location = new System.Drawing.Point(260, 294);
             this.max2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.max2.Name = "max2";
             this.max2.Size = new System.Drawing.Size(65, 30);
             this.max2.TabIndex = 66;
+            this.max2.Text = "77\'";
             this.max2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // date4
@@ -188,12 +190,13 @@
             // 
             this.max4.BackColor = System.Drawing.Color.Transparent;
             this.max4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.max4.ForeColor = System.Drawing.Color.LightCoral;
+            this.max4.ForeColor = System.Drawing.Color.Red;
             this.max4.Location = new System.Drawing.Point(260, 393);
             this.max4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.max4.Name = "max4";
             this.max4.Size = new System.Drawing.Size(65, 30);
             this.max4.TabIndex = 74;
+            this.max4.Text = "77\'";
             this.max4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // min4
@@ -237,12 +240,13 @@
             // 
             this.max3.BackColor = System.Drawing.Color.Transparent;
             this.max3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.max3.ForeColor = System.Drawing.Color.LightCoral;
+            this.max3.ForeColor = System.Drawing.Color.Red;
             this.max3.Location = new System.Drawing.Point(260, 343);
             this.max3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.max3.Name = "max3";
             this.max3.Size = new System.Drawing.Size(65, 30);
             this.max3.TabIndex = 70;
+            this.max3.Text = "77\'";
             this.max3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // date5
@@ -262,12 +266,13 @@
             // 
             this.max5.BackColor = System.Drawing.Color.Transparent;
             this.max5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.max5.ForeColor = System.Drawing.Color.LightCoral;
+            this.max5.ForeColor = System.Drawing.Color.Red;
             this.max5.Location = new System.Drawing.Point(260, 443);
             this.max5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.max5.Name = "max5";
             this.max5.Size = new System.Drawing.Size(65, 30);
             this.max5.TabIndex = 77;
+            this.max5.Text = "77\'";
             this.max5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // min5
@@ -286,12 +291,13 @@
             // 
             this.conditionLabel.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.conditionLabel.ForeColor = System.Drawing.Color.LightCoral;
+            this.conditionLabel.ForeColor = System.Drawing.Color.Red;
             this.conditionLabel.Location = new System.Drawing.Point(165, 225);
             this.conditionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.conditionLabel.Name = "conditionLabel";
             this.conditionLabel.Size = new System.Drawing.Size(164, 65);
             this.conditionLabel.TabIndex = 84;
+            this.conditionLabel.Text = "77\'";
             this.conditionLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // picBox5

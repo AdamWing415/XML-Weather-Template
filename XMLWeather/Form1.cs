@@ -48,49 +48,43 @@ namespace XMLWeather
 
                 if (conditionType == 800)
                 {
-                    newDay.condition = "Clear";
                     newDay.image = Resources.weather_sun;
-                    //add background images
+                    newDay.forcastBackImage = Resources.clear_blur_;
                 }
                 else if (conditionType < 300)
                 {
-                    newDay.condition = "Thunderstorms";
                     newDay.image = Resources.weather_thunder;
-                    //add background images
+                    newDay.forcastBackImage = Resources.Lightning_blur_;
                 }
                 else if (conditionType < 600 && conditionType >= 300)
                 {
-                    newDay.condition = "Rain";
                     newDay.image = Resources.weather_rain;
-                    //add background images
+                    newDay.forcastBackImage = Resources.rain_blur_;
                 }
                 else if (conditionType < 700 && conditionType >= 600)
                 {
-                    newDay.condition = "Snow";
                     newDay.image = Resources.weather_snow;
-                    //add background images
+                    newDay.forcastBackImage = Resources.snow_blur_;
                 }
                 else if (conditionType < 800 && conditionType >= 700)
                 {
-                    newDay.condition = "Atmospheric Conditions";
                     newDay.image = Resources.weather_fog;
-                    //add background images
+                    newDay.forcastBackImage = Resources.foggy_blur_;
                 }
                 else if (conditionType > 800)
                 {
-                    newDay.condition = "Cloudy";
                     newDay.image = Resources.weather_clouds;
-                    //add background images
+                    newDay.forcastBackImage = Resources.cloudy_blur_;
                 }
                 reader.ReadToFollowing("temperature");
                 newDay.tempLow = reader.GetAttribute("min");
                 newDay.tempHigh = reader.GetAttribute("max");
 
-                //TODO: if day object not null add to the days list
-                //if (newDay != null)
-                //{
-                days.Add(newDay);
-                //}
+            //TODO: if day object not null add to the days list
+                if (newDay.date != null)
+                {
+                    days.Add(newDay);
+                }
             }
         }
 
@@ -106,7 +100,41 @@ namespace XMLWeather
             reader.ReadToFollowing("temperature");
             days[0].currentTemp = reader.GetAttribute("value");
 
+            reader.ReadToFollowing("weather");
+            int conditionType = Convert.ToInt16(reader.GetAttribute("number"));
+
+            if (conditionType == 800)
+            {
+                days[0].condition = "Clear";
+                days[0].backImage = Resources.clear;
+            }
+            else if (conditionType < 300)
+            {
+                days[0].condition = "Thunder";
+                days[0].backImage = Resources.Lightning;
+            }
+            else if (conditionType < 600 && conditionType >= 300)
+            {
+                days[0].condition = "Rain";
+                days[0].backImage = Resources.rain;
+            }
+            else if (conditionType < 700 && conditionType >= 600)
+            {
+                days[0].condition = "Snow";
+                days[0].backImage = Resources.snow;
+            }
+            else if (conditionType < 800 && conditionType >= 700)
+            {
+                days[0].condition = "Fog";
+                days[0].backImage = Resources.foggy;
+            }
+            else if (conditionType > 800)
+            {
+                days[0].condition = "Clouds";
+                days[0].backImage = Resources.cloudy;
+            }
            
+
         }
 
 

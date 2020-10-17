@@ -10,13 +10,14 @@ namespace XMLWeather
     {
         public string date, currentTemp, currentTime, condition, location, tempHigh, tempLow, 
             windSpeed, windDirection, precipitation, visibility;
-        public Image image, backImage;
+        public Image image, backImage, forcastBackImage;
         public Day()
-        {
+        { 
             date = currentTemp = currentTime = condition = location = tempHigh = tempLow
                 = windSpeed = windDirection = precipitation = visibility =  "";
             image = null;
             backImage = null;
+            forcastBackImage = null;
         }
     }
 }

@@ -24,6 +24,7 @@ namespace XMLWeather
             max1.Text = Math.Round(Convert.ToDecimal(Form1.days[1].tempHigh)) + "°";
             picBox1.Image = Form1.days[1].image;
             conditionLabel.Text = Form1.days[1].condition;
+            this.BackgroundImage = Form1.days[1].forcastBackImage;
 
             date2.Text = Form1.days[2].date;
             min2.Text = Math.Round(Convert.ToDecimal(Form1.days[2].tempLow)) + "°";
