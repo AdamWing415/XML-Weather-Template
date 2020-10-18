@@ -94,7 +94,7 @@ namespace XMLWeather
         private void ExtractCurrent()
         {
             // current info is not included in forecast file so we need to use this file to get it
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=stratford,CA&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
+            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=" + "stratford,CA" + "&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
 
             //TODO: find the city and current temperature and add to appropriate item in days list
             reader.ReadToFollowing("city");
