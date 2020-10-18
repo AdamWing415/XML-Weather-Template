@@ -43,6 +43,7 @@
             this.windLabel = new System.Windows.Forms.Label();
             this.windOutputLabel = new System.Windows.Forms.Label();
             this.updateLabel = new System.Windows.Forms.Label();
+            this.searchLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -100,7 +101,7 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(28, 12);
+            this.label3.Location = new System.Drawing.Point(8, 12);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 34);
@@ -113,7 +114,7 @@
             this.forecastLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forecastLabel.ForeColor = System.Drawing.Color.White;
             this.forecastLabel.Image = ((System.Drawing.Image)(resources.GetObject("forecastLabel.Image")));
-            this.forecastLabel.Location = new System.Drawing.Point(204, 12);
+            this.forecastLabel.Location = new System.Drawing.Point(117, 12);
             this.forecastLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.forecastLabel.Name = "forecastLabel";
             this.forecastLabel.Size = new System.Drawing.Size(110, 34);
@@ -127,7 +128,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(13, 23);
+            this.label1.Location = new System.Drawing.Point(-7, 23);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 33);
@@ -224,6 +225,20 @@
             this.updateLabel.Text = "Last Updated:";
             this.updateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // searchLabel
+            // 
+            this.searchLabel.BackColor = System.Drawing.Color.Transparent;
+            this.searchLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLabel.ForeColor = System.Drawing.Color.White;
+            this.searchLabel.Image = ((System.Drawing.Image)(resources.GetObject("searchLabel.Image")));
+            this.searchLabel.Location = new System.Drawing.Point(223, 12);
+            this.searchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.searchLabel.Name = "searchLabel";
+            this.searchLabel.Size = new System.Drawing.Size(110, 34);
+            this.searchLabel.TabIndex = 72;
+            this.searchLabel.Text = "Search";
+            this.searchLabel.Click += new System.EventHandler(this.searchLabel_Click);
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -231,6 +246,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::XMLWeather.Properties.Resources.foggy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.updateLabel);
             this.Controls.Add(this.windOutputLabel);
             this.Controls.Add(this.windLabel);
@@ -267,5 +283,6 @@
         private System.Windows.Forms.Label windLabel;
         private System.Windows.Forms.Label windOutputLabel;
         private System.Windows.Forms.Label updateLabel;
+        private System.Windows.Forms.Label searchLabel;
     }
 }
