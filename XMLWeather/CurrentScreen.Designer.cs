@@ -38,6 +38,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.conditionLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.humidValueLabel = new System.Windows.Forms.Label();
+            this.humidityLabel = new System.Windows.Forms.Label();
+            this.windLabel = new System.Windows.Forms.Label();
+            this.windOutputLabel = new System.Windows.Forms.Label();
+            this.updateLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -57,7 +62,7 @@
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
             this.maxOutput.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxOutput.ForeColor = System.Drawing.Color.Red;
-            this.maxOutput.Location = new System.Drawing.Point(252, 142);
+            this.maxOutput.Location = new System.Drawing.Point(250, 95);
             this.maxOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(112, 51);
@@ -69,7 +74,7 @@
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
             this.minOutput.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minOutput.ForeColor = System.Drawing.Color.Turquoise;
-            this.minOutput.Location = new System.Drawing.Point(252, 92);
+            this.minOutput.Location = new System.Drawing.Point(250, 143);
             this.minOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(112, 50);
@@ -80,13 +85,13 @@
             // 
             this.currentOutput.BackColor = System.Drawing.Color.Transparent;
             this.currentOutput.Font = new System.Drawing.Font("Century Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentOutput.ForeColor = System.Drawing.Color.Black;
-            this.currentOutput.Location = new System.Drawing.Point(33, 109);
+            this.currentOutput.ForeColor = System.Drawing.Color.Goldenrod;
+            this.currentOutput.Location = new System.Drawing.Point(46, 109);
             this.currentOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.currentOutput.Name = "currentOutput";
-            this.currentOutput.Size = new System.Drawing.Size(219, 99);
+            this.currentOutput.Size = new System.Drawing.Size(196, 84);
             this.currentOutput.TabIndex = 28;
-            this.currentOutput.Text = "15C";
+            this.currentOutput.Text = "15\'C";
             this.currentOutput.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
@@ -135,7 +140,7 @@
             this.conditionLabel.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel.ForeColor = System.Drawing.Color.White;
-            this.conditionLabel.Location = new System.Drawing.Point(209, 206);
+            this.conditionLabel.Location = new System.Drawing.Point(212, 217);
             this.conditionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.conditionLabel.Name = "conditionLabel";
             this.conditionLabel.Size = new System.Drawing.Size(127, 50);
@@ -156,13 +161,81 @@
             this.label2.Size = new System.Drawing.Size(339, 74);
             this.label2.TabIndex = 66;
             // 
+            // humidValueLabel
+            // 
+            this.humidValueLabel.BackColor = System.Drawing.Color.Transparent;
+            this.humidValueLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.humidValueLabel.ForeColor = System.Drawing.Color.White;
+            this.humidValueLabel.Location = new System.Drawing.Point(212, 325);
+            this.humidValueLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.humidValueLabel.Name = "humidValueLabel";
+            this.humidValueLabel.Size = new System.Drawing.Size(119, 40);
+            this.humidValueLabel.TabIndex = 67;
+            this.humidValueLabel.Text = "Hum%";
+            this.humidValueLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // humidityLabel
+            // 
+            this.humidityLabel.BackColor = System.Drawing.Color.Transparent;
+            this.humidityLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.humidityLabel.ForeColor = System.Drawing.Color.White;
+            this.humidityLabel.Location = new System.Drawing.Point(13, 325);
+            this.humidityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.humidityLabel.Name = "humidityLabel";
+            this.humidityLabel.Size = new System.Drawing.Size(164, 40);
+            this.humidityLabel.TabIndex = 68;
+            this.humidityLabel.Text = "Humidity:";
+            // 
+            // windLabel
+            // 
+            this.windLabel.BackColor = System.Drawing.Color.Transparent;
+            this.windLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windLabel.ForeColor = System.Drawing.Color.White;
+            this.windLabel.Location = new System.Drawing.Point(13, 385);
+            this.windLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.windLabel.Name = "windLabel";
+            this.windLabel.Size = new System.Drawing.Size(164, 40);
+            this.windLabel.TabIndex = 69;
+            this.windLabel.Text = "Wind:";
+            // 
+            // windOutputLabel
+            // 
+            this.windOutputLabel.BackColor = System.Drawing.Color.Transparent;
+            this.windOutputLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windOutputLabel.ForeColor = System.Drawing.Color.White;
+            this.windOutputLabel.Location = new System.Drawing.Point(173, 385);
+            this.windOutputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.windOutputLabel.Name = "windOutputLabel";
+            this.windOutputLabel.Size = new System.Drawing.Size(158, 40);
+            this.windOutputLabel.TabIndex = 70;
+            this.windOutputLabel.Text = "Speed Dir";
+            this.windOutputLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // updateLabel
+            // 
+            this.updateLabel.BackColor = System.Drawing.Color.Transparent;
+            this.updateLabel.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateLabel.ForeColor = System.Drawing.Color.White;
+            this.updateLabel.Location = new System.Drawing.Point(4, 425);
+            this.updateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.updateLabel.Name = "updateLabel";
+            this.updateLabel.Size = new System.Drawing.Size(325, 67);
+            this.updateLabel.TabIndex = 71;
+            this.updateLabel.Text = "Last Updated:";
+            this.updateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::XMLWeather.Properties.Resources.snow;
+            this.BackgroundImage = global::XMLWeather.Properties.Resources.foggy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.updateLabel);
+            this.Controls.Add(this.windOutputLabel);
+            this.Controls.Add(this.windLabel);
+            this.Controls.Add(this.humidityLabel);
+            this.Controls.Add(this.humidValueLabel);
             this.Controls.Add(this.conditionLabel);
             this.Controls.Add(this.maxOutput);
             this.Controls.Add(this.minOutput);
@@ -189,5 +262,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label conditionLabel;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label humidValueLabel;
+        private System.Windows.Forms.Label humidityLabel;
+        private System.Windows.Forms.Label windLabel;
+        private System.Windows.Forms.Label windOutputLabel;
+        private System.Windows.Forms.Label updateLabel;
     }
 }

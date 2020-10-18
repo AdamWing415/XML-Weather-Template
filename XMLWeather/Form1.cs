@@ -12,6 +12,9 @@ using XMLWeather.Properties;
 
 namespace XMLWeather
 {
+    /// <summary>
+    /// ADD COMMENTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    /// </summary>
     public partial class Form1 : Form
     {
         // create list to hold day objects
@@ -100,6 +103,15 @@ namespace XMLWeather
             reader.ReadToFollowing("temperature");
             days[0].currentTemp = reader.GetAttribute("value");
 
+            reader.ReadToFollowing("humidity");
+            days[0].humidity = reader.GetAttribute("value");
+
+            reader.ReadToFollowing("speed");
+            days[0].windSpeed = reader.GetAttribute("value");
+
+            reader.ReadToFollowing("direction");
+            days[0].windDirection = reader.GetAttribute("code");
+
             reader.ReadToFollowing("weather");
             int conditionType = Convert.ToInt16(reader.GetAttribute("number"));
 
@@ -133,7 +145,9 @@ namespace XMLWeather
                 days[0].condition = "Clouds";
                 days[0].backImage = Resources.cloudy;
             }
-           
+
+            reader.ReadToFollowing("lastupdate");
+            days[0].updateTime = reader.GetAttribute("value").Replace("-", "/").Replace("T","   ") + " UTC";
 
         }
 
