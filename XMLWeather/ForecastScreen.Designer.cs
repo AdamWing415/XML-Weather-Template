@@ -291,15 +291,15 @@
             // conditionLabel
             // 
             this.conditionLabel.BackColor = System.Drawing.Color.Transparent;
-            this.conditionLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.conditionLabel.ForeColor = System.Drawing.Color.Red;
-            this.conditionLabel.Location = new System.Drawing.Point(165, 225);
+            this.conditionLabel.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conditionLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.conditionLabel.Location = new System.Drawing.Point(159, 225);
             this.conditionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.conditionLabel.Name = "conditionLabel";
-            this.conditionLabel.Size = new System.Drawing.Size(164, 65);
+            this.conditionLabel.Size = new System.Drawing.Size(168, 65);
             this.conditionLabel.TabIndex = 84;
-            this.conditionLabel.Text = "77\'";
-            this.conditionLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.conditionLabel.Text = "Thunder";
+            this.conditionLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // picBox5
             // 

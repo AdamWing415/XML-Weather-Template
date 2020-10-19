@@ -55,31 +55,38 @@ namespace XMLWeather
 
                     if (conditionType == 800)
                     {
+                        newDay.condition = "Clear";
                         newDay.image = Resources.weather_sun;
                         newDay.forcastBackImage = Resources.clear_blur_;
                     }
                     else if (conditionType < 300)
                     {
+                        newDay.condition = "Thunder";
+
                         newDay.image = Resources.weather_thunder;
                         newDay.forcastBackImage = Resources.Lightning_blur_;
                     }
                     else if (conditionType < 600 && conditionType >= 300)
                     {
+                        newDay.condition = "Rain";
                         newDay.image = Resources.weather_rain;
                         newDay.forcastBackImage = Resources.rain_blur_;
                     }
                     else if (conditionType < 700 && conditionType >= 600)
                     {
+                        newDay.condition = "Snow";
                         newDay.image = Resources.weather_snow;
                         newDay.forcastBackImage = Resources.snow_blur_;
                     }
                     else if (conditionType < 800 && conditionType >= 700)
                     {
+                        newDay.condition = "Fog";
                         newDay.image = Resources.weather_fog;
                         newDay.forcastBackImage = Resources.foggy_blur_;
                     }
                     else if (conditionType > 800)
                     {
+                        newDay.condition = "Clouds";
                         newDay.image = Resources.weather_clouds;
                         newDay.forcastBackImage = Resources.cloudy_blur_;
                     }

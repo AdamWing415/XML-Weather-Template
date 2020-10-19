@@ -51,7 +51,7 @@
             this.cityOutput.BackColor = System.Drawing.Color.Transparent;
             this.cityOutput.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityOutput.ForeColor = System.Drawing.Color.White;
-            this.cityOutput.Location = new System.Drawing.Point(13, 69);
+            this.cityOutput.Location = new System.Drawing.Point(13, 72);
             this.cityOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cityOutput.Name = "cityOutput";
             this.cityOutput.Size = new System.Drawing.Size(301, 47);
@@ -156,10 +156,10 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(-6, -5);
+            this.label2.Location = new System.Drawing.Point(-1, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(339, 74);
+            this.label2.Size = new System.Drawing.Size(334, 72);
             this.label2.TabIndex = 66;
             // 
             // humidValueLabel
