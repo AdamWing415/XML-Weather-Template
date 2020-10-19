@@ -13,7 +13,7 @@ namespace XMLWeather
 
     public partial class SearchScreen : UserControl
     {
-        string location;
+        string location; // I need a second location string in case the city input is invalid
         public SearchScreen()
         {
             InitializeComponent();
@@ -70,10 +70,10 @@ namespace XMLWeather
         {
             //inputs data to gve Stratford's weather
             Form1.days.Clear();
-            location = "stratford,CA";
+            Form1.location = "stratford,CA";
 
-            Form1.ExtractForecast(location);
-            Form1.ExtractCurrent(location);
+            Form1.ExtractForecast(Form1.location);
+            Form1.ExtractCurrent(Form1.location);
 
             Form f = this.FindForm();
             f.Controls.Remove(this);
@@ -86,10 +86,10 @@ namespace XMLWeather
         {
             //inputs data to gve Waterloo's weather
             Form1.days.Clear();
-            location = "waterloo,CA";
+            Form1.location = "waterloo,CA";
 
-            Form1.ExtractForecast(location);
-            Form1.ExtractCurrent(location);
+            Form1.ExtractForecast(Form1.location);
+            Form1.ExtractCurrent(Form1.location);
 
             Form f = this.FindForm();
             f.Controls.Remove(this);
@@ -102,10 +102,10 @@ namespace XMLWeather
         {
             //inputs data to gve London's weather
             Form1.days.Clear();
-            location = "london,CA";
+            Form1.location = "london,CA";
 
-            Form1.ExtractForecast(location);
-            Form1.ExtractCurrent(location);
+            Form1.ExtractForecast(Form1.location);
+            Form1.ExtractCurrent(Form1.location);
 
             Form f = this.FindForm();
             f.Controls.Remove(this);
@@ -118,10 +118,10 @@ namespace XMLWeather
         {
             //inputs data to gve toronto's weather
             Form1.days.Clear();
-            location = "toronto,CA";
+            Form1.location = "toronto,CA";
 
-            Form1.ExtractForecast(location);
-            Form1.ExtractCurrent(location);
+            Form1.ExtractForecast(Form1.location);
+            Form1.ExtractCurrent(Form1.location);
 
             Form f = this.FindForm();
             f.Controls.Remove(this);
@@ -134,10 +134,10 @@ namespace XMLWeather
         {
             //inputs data to gve niagara's weather
             Form1.days.Clear();
-            location = "Niagara,US";
+            Form1.location = "Niagara,US";
 
-            Form1.ExtractForecast(location);
-            Form1.ExtractCurrent(location);
+            Form1.ExtractForecast(Form1.location);
+            Form1.ExtractCurrent(Form1.location);
 
             Form f = this.FindForm();
             f.Controls.Remove(this);

@@ -27,7 +27,7 @@ namespace XMLWeather
     {
         // create list to hold day objects
         public static List<Day> days = new List<Day>();
-        string location;
+        public static string location;
         public Form1()
         {
             //sets default location to stratford and runs both functions to retrieve data from open weather
@@ -111,8 +111,7 @@ namespace XMLWeather
             }
             catch
             {
-                //resets to stratford if the city isn't found
-                string location = "stratford, CA";
+                //resets to last city if the city isn't found
                 ExtractForecast(location);
             }
 
@@ -186,9 +185,8 @@ namespace XMLWeather
             }
             catch
             {
-                //resets to stratford if the city isn't found
-
-                string location = "stratford, CA";
+                //resets to last city if the city isn't found
+                
                 ExtractCurrent(location);
             }
         }
