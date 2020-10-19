@@ -9,14 +9,14 @@ namespace XMLWeather
     public class Day
     {
         //adds all values held by a day 
-        public string date, currentTemp, currentTime, condition, location, tempHigh, tempLow, 
+        public string date, currentTemp, currentTime, condition, location, tempHigh, tempLow,
             windSpeed, windDirection, precipitation, humidity, updateTime;
         public Image image, backImage, forcastBackImage;
         public Day()
-        { 
+        {
             //sets all values to null by default
             date = currentTemp = currentTime = condition = location = tempHigh = tempLow
-                = windSpeed = windDirection = precipitation  = humidity = updateTime = "";
+                = windSpeed = windDirection = precipitation = humidity = updateTime = "";
             image = null;
             backImage = null;
             forcastBackImage = null;

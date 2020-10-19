@@ -10,14 +10,14 @@ using System.Xml;
 
 namespace XMLWeather
 {
-  
+
     public partial class SearchScreen : UserControl
     {
         string location;
         public SearchScreen()
         {
             InitializeComponent();
-           //sets background image
+            //sets background image
             this.BackgroundImage = Form1.days[0].backImage;
         }
 
@@ -47,7 +47,7 @@ namespace XMLWeather
             if (SearchBox.Text == " Search Cities")
             {
                 SearchBox.Text = " ";
-            } 
+            }
         }
 
         private void SearchPicBox_Click(object sender, EventArgs e)

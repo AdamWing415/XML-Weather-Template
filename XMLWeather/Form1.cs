@@ -35,7 +35,7 @@ namespace XMLWeather
             location = "stratford, CA";
             ExtractForecast(location);
             ExtractCurrent(location);
-            
+
             // open weather screen for todays weather
             CurrentScreen cs = new CurrentScreen();
             this.Controls.Add(cs);
@@ -45,7 +45,7 @@ namespace XMLWeather
         {
             try
             {
-                //add a try catch here to avoid crashes!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                //creates a reader to get info from the xml
                 XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=" + city + "&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
 
                 while (reader.Read())
@@ -115,12 +115,13 @@ namespace XMLWeather
                 string location = "stratford, CA";
                 ExtractForecast(location);
             }
-            
+
         }
 
         public static void ExtractCurrent(string city)
         {
-            try {
+            try
+            {
                 // current info is not included in forecast file so we need to use this file to get it
                 XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
 
@@ -139,7 +140,7 @@ namespace XMLWeather
                 reader.ReadToFollowing("speed");
                 days[0].windSpeed = reader.GetAttribute("value");
 
-              
+
                 reader.ReadToFollowing("direction");
                 days[0].windDirection = reader.GetAttribute("code");
 
