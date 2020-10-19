@@ -31,7 +31,7 @@ namespace XMLWeather
             windOutputLabel.Text = Math.Round(kmh) + " Km/h " + Form1.days[0].windDirection;
             
             //converts the est raw time to formatted time and display
-            updateLabel.Text = "Last Updated: \n" + Form1.days[0].updateTime.ToString("####-##-##   ##:##:##") + " EST"; 
+            updateLabel.Text = "Last Updated: \n" + DateTime.Now.ToString("dd-MM-yy,   hh:mm"); 
             
             conditionLabel.Text = Form1.days[0].condition;
 

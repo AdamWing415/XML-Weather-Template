@@ -183,11 +183,6 @@ namespace XMLWeather
                     days[0].condition = "Clouds";
                     days[0].backImage = Resources.cloudy;
                 }
-
-                //gets the last updated time and converts to EST (doesn't work if time is between 00:00:00 and 04:00:00 UTC but it's the best I've got
-                reader.ReadToFollowing("lastupdate");
-                days[0].updateTime = Convert.ToInt64(reader.GetAttribute("value").Replace("T", "").Replace("-", "").Replace(" ", "").Replace(":", ""));
-                days[0].updateTime = (days[0].updateTime) - 40000 ;
                
             }
             catch
