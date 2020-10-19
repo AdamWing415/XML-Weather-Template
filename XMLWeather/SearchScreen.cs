@@ -44,9 +44,9 @@ namespace XMLWeather
         private void SearchBox_MouseClick(object sender, MouseEventArgs e)
         {
             //resets text on click so that the user can search
-            if (SearchBox.Text == " Search Cities")
+            if (SearchBox.Text == "Search , ie. Stratford,CA")
             {
-                SearchBox.Text = " ";
+                SearchBox.Text = "";
             }
         }
 

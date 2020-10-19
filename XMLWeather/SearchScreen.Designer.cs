@@ -200,7 +200,7 @@
             this.SearchBox.Name = "SearchBox";
             this.SearchBox.Size = new System.Drawing.Size(303, 29);
             this.SearchBox.TabIndex = 97;
-            this.SearchBox.Text = " Search Cities";
+            this.SearchBox.Text = "Search , ie. Stratford,CA";
             this.SearchBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.SearchBox_MouseClick);
             // 
             // SearchPicBox
