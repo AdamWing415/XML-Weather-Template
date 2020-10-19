@@ -14,7 +14,14 @@ using System.Linq.Expressions;
 namespace XMLWeather
 {
     /// <summary>
-    /// ADD COMMENTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    /// Adam Wingert
+    /// Weather App
+    /// 19/10/2020
+    /// 
+    /// NOTE:
+    /// ALL backgrounds are made by ME!
+    /// icons are not
+    /// 
     /// </summary>
     public partial class Form1 : Form
     {
@@ -23,6 +30,7 @@ namespace XMLWeather
         string location;
         public Form1()
         {
+            //sets default location to stratford and runs both functions to retrieve data from open weather
             InitializeComponent();
             location = "stratford, CA";
             ExtractForecast(location);
@@ -49,7 +57,7 @@ namespace XMLWeather
                     reader.ReadToFollowing("time");
                     newDay.date = reader.GetAttribute("day");
 
-
+                    //gets the weather condition and sets all icons and data accordingly
                     reader.ReadToFollowing("symbol");
                     int conditionType = Convert.ToInt16(reader.GetAttribute("number"));
 
@@ -94,7 +102,7 @@ namespace XMLWeather
                     newDay.tempLow = reader.GetAttribute("min");
                     newDay.tempHigh = reader.GetAttribute("max");
 
-                    //TODO: if day object not null add to the days list
+                    // if day object not null add to the days list
                     if (newDay.date != null)
                     {
                         days.Add(newDay);
@@ -103,6 +111,7 @@ namespace XMLWeather
             }
             catch
             {
+                //resets to stratford if the city isn't found
                 string location = "stratford, CA";
                 ExtractForecast(location);
             }
@@ -115,22 +124,26 @@ namespace XMLWeather
                 // current info is not included in forecast file so we need to use this file to get it
                 XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
 
-                //TODO: find the city and current temperature and add to appropriate item in days list
+                //find the city and current temperature and add to appropriate item in days list
                 reader.ReadToFollowing("city");
                 days[0].location = reader.GetAttribute("name");
 
                 reader.ReadToFollowing("temperature");
                 days[0].currentTemp = reader.GetAttribute("value");
 
+                //gets the humidity value for today
                 reader.ReadToFollowing("humidity");
                 days[0].humidity = reader.GetAttribute("value");
 
+                //gets the wind speed and direction values for today
                 reader.ReadToFollowing("speed");
                 days[0].windSpeed = reader.GetAttribute("value");
 
+              
                 reader.ReadToFollowing("direction");
                 days[0].windDirection = reader.GetAttribute("code");
 
+                //gets the conditions values for today and sets the background and other relevant info
                 reader.ReadToFollowing("weather");
                 int conditionType = Convert.ToInt16(reader.GetAttribute("number"));
 
@@ -165,12 +178,15 @@ namespace XMLWeather
                     days[0].backImage = Resources.cloudy;
                 }
 
+                //gets the last updated time
                 reader.ReadToFollowing("lastupdate");
-                days[0].updateTime = reader.GetAttribute("value").Replace("-", "/").Replace("T", "   ") + " UTC";
+                days[0].updateTime = reader.GetAttribute("value").Replace("T", "   ") + " UTC";
 
             }
             catch
             {
+                //resets to stratford if the city isn't found
+
                 string location = "stratford, CA";
                 ExtractCurrent(location);
             }

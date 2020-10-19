@@ -19,6 +19,7 @@ namespace XMLWeather
 
         public void displayForecast()
         {
+            //sets tomorrow's conditions, labels, and image as well as the background of the control
             date1.Text = Form1.days[1].date;
             min1.Text = Math.Round(Convert.ToDecimal(Form1.days[1].tempLow)) + "°";
             max1.Text = Math.Round(Convert.ToDecimal(Form1.days[1].tempHigh)) + "°";
@@ -26,6 +27,7 @@ namespace XMLWeather
             conditionLabel.Text = Form1.days[1].condition;
             this.BackgroundImage = Form1.days[1].forcastBackImage;
 
+            //sets the rest of the week's conditions, labels, and images
             date2.Text = Form1.days[2].date;
             min2.Text = Math.Round(Convert.ToDecimal(Form1.days[2].tempLow)) + "°";
             max2.Text = Math.Round(Convert.ToDecimal(Form1.days[2].tempHigh)) + "°";
@@ -49,6 +51,7 @@ namespace XMLWeather
 
         private void label3_Click(object sender, EventArgs e)
         {
+            //transfers control to the current/today screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
 
@@ -58,6 +61,7 @@ namespace XMLWeather
 
         private void searchLabel_Click(object sender, EventArgs e)
         {
+            //transfers control to the search screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
 

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.forecastLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.todayLabel = new System.Windows.Forms.Label();
             this.min1 = new System.Windows.Forms.Label();
             this.max1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -72,18 +72,18 @@
             this.forecastLabel.TabIndex = 62;
             this.forecastLabel.Text = "5 Day";
             // 
-            // label3
+            // todayLabel
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(9, 12);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 34);
-            this.label3.TabIndex = 61;
-            this.label3.Text = "Today";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.todayLabel.BackColor = System.Drawing.Color.Transparent;
+            this.todayLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.todayLabel.ForeColor = System.Drawing.Color.White;
+            this.todayLabel.Location = new System.Drawing.Point(9, 12);
+            this.todayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.todayLabel.Name = "todayLabel";
+            this.todayLabel.Size = new System.Drawing.Size(110, 34);
+            this.todayLabel.TabIndex = 61;
+            this.todayLabel.Text = "Today";
+            this.todayLabel.Click += new System.EventHandler(this.label3_Click);
             // 
             // min1
             // 
@@ -392,7 +392,7 @@
             this.Controls.Add(this.max2);
             this.Controls.Add(this.date1);
             this.Controls.Add(this.forecastLabel);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.todayLabel);
             this.Controls.Add(this.min1);
             this.Controls.Add(this.max1);
             this.Controls.Add(this.label5);
@@ -412,7 +412,7 @@
         #endregion
 
         private System.Windows.Forms.Label forecastLabel;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label todayLabel;
         private System.Windows.Forms.Label min1;
         private System.Windows.Forms.Label max1;
         private System.Windows.Forms.Label label5;

@@ -33,7 +33,7 @@
             this.maxOutput = new System.Windows.Forms.Label();
             this.minOutput = new System.Windows.Forms.Label();
             this.currentOutput = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.todayLabel = new System.Windows.Forms.Label();
             this.forecastLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.conditionLabel = new System.Windows.Forms.Label();
@@ -95,18 +95,18 @@
             this.currentOutput.Text = "15\'C";
             this.currentOutput.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label3
+            // todayLabel
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(8, 12);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 34);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Today";
+            this.todayLabel.BackColor = System.Drawing.Color.Transparent;
+            this.todayLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.todayLabel.ForeColor = System.Drawing.Color.White;
+            this.todayLabel.Image = ((System.Drawing.Image)(resources.GetObject("todayLabel.Image")));
+            this.todayLabel.Location = new System.Drawing.Point(8, 12);
+            this.todayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.todayLabel.Name = "todayLabel";
+            this.todayLabel.Size = new System.Drawing.Size(110, 34);
+            this.todayLabel.TabIndex = 40;
+            this.todayLabel.Text = "Today";
             // 
             // forecastLabel
             // 
@@ -258,7 +258,7 @@
             this.Controls.Add(this.cityOutput);
             this.Controls.Add(this.currentOutput);
             this.Controls.Add(this.forecastLabel);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.todayLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -273,7 +273,7 @@
         private System.Windows.Forms.Label maxOutput;
         private System.Windows.Forms.Label minOutput;
         private System.Windows.Forms.Label currentOutput;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label todayLabel;
         private System.Windows.Forms.Label forecastLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label conditionLabel;

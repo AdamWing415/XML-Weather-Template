@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchScreen));
             this.searchLabel = new System.Windows.Forms.Label();
             this.forecastLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.todayLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.sugestLabel = new System.Windows.Forms.Label();
@@ -72,19 +72,19 @@
             this.forecastLabel.Text = "5 Day";
             this.forecastLabel.Click += new System.EventHandler(this.forecastLabel_Click);
             // 
-            // label3
+            // todayLabel
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(9, 12);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 34);
-            this.label3.TabIndex = 86;
-            this.label3.Text = "Today";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.todayLabel.BackColor = System.Drawing.Color.Transparent;
+            this.todayLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.todayLabel.ForeColor = System.Drawing.Color.White;
+            this.todayLabel.Image = ((System.Drawing.Image)(resources.GetObject("todayLabel.Image")));
+            this.todayLabel.Location = new System.Drawing.Point(9, 12);
+            this.todayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.todayLabel.Name = "todayLabel";
+            this.todayLabel.Size = new System.Drawing.Size(110, 34);
+            this.todayLabel.TabIndex = 86;
+            this.todayLabel.Text = "Today";
+            this.todayLabel.Click += new System.EventHandler(this.label3_Click);
             // 
             // label5
             // 
@@ -231,7 +231,7 @@
             this.Controls.Add(this.sugestLabel);
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.forecastLabel);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.todayLabel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Name = "SearchScreen";
@@ -246,7 +246,7 @@
 
         private System.Windows.Forms.Label searchLabel;
         private System.Windows.Forms.Label forecastLabel;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label todayLabel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label sugestLabel;
