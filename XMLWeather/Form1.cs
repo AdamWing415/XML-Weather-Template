@@ -47,6 +47,7 @@ namespace XMLWeather
             {
                 //creates a reader to get info from the xml
                 XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=" + city + "&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
+                Form1.location = city;
 
                 while (reader.Read())
                 {
