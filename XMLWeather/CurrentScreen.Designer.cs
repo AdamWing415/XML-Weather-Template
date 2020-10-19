@@ -204,10 +204,10 @@
             this.windOutputLabel.BackColor = System.Drawing.Color.Transparent;
             this.windOutputLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.windOutputLabel.ForeColor = System.Drawing.Color.White;
-            this.windOutputLabel.Location = new System.Drawing.Point(173, 385);
+            this.windOutputLabel.Location = new System.Drawing.Point(106, 385);
             this.windOutputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.windOutputLabel.Name = "windOutputLabel";
-            this.windOutputLabel.Size = new System.Drawing.Size(158, 40);
+            this.windOutputLabel.Size = new System.Drawing.Size(225, 40);
             this.windOutputLabel.TabIndex = 70;
             this.windOutputLabel.Text = "Speed Dir";
             this.windOutputLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;

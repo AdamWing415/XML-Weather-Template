@@ -23,18 +23,19 @@ namespace XMLWeather
         public Form1()
         {
             InitializeComponent();
-
-            ExtractForecast();
-            ExtractCurrent();
+            string location = "stratford, CA";
+            ExtractForecast(location);
+            ExtractCurrent(location);
             
             // open weather screen for todays weather
             CurrentScreen cs = new CurrentScreen();
             this.Controls.Add(cs);
         }
 
-        private void ExtractForecast()
+        public static void ExtractForecast(string city)
         {
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=Stratford,CA&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
+            //add a try catch here to avoid crashes!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=" + city + "&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
 
             while (reader.Read())
             {
@@ -91,10 +92,10 @@ namespace XMLWeather
             }
         }
 
-        private void ExtractCurrent()
+        public static void ExtractCurrent(string city)
         {
             // current info is not included in forecast file so we need to use this file to get it
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=" + "stratford,CA" + "&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
+            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
 
             //TODO: find the city and current temperature and add to appropriate item in days list
             reader.ReadToFollowing("city");
