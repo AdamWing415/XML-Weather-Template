@@ -46,9 +46,12 @@ namespace XMLWeather
             try
             {
                 //creates a reader to get info from the xml
+                //XmlReader reader = XmlReader.Create("WeatherData7Day.xml");
                 XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=" + city + "&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
-                Form1.location = city;
-
+                if (city != null)
+                {
+                    location = city;
+                }
                 while (reader.Read())
                 {
                     //create a day object
@@ -124,6 +127,8 @@ namespace XMLWeather
             {
                 // current info is not included in forecast file so we need to use this file to get it
                 XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
+                //XmlReader reader = XmlReader.Create("WeatherData.xml");
+
 
                 //find the city and current temperature and add to appropriate item in days list
                 reader.ReadToFollowing("city");
@@ -179,15 +184,15 @@ namespace XMLWeather
                     days[0].backImage = Resources.cloudy;
                 }
 
-                //gets the last updated time
+                //gets the last updated time and converts to EST (doesn't work if time is between 00:00:00 and 04:00:00 UTC but it's the best I've got
                 reader.ReadToFollowing("lastupdate");
-                days[0].updateTime = reader.GetAttribute("value").Replace("T", "   ") + " UTC";
-
+                days[0].updateTime = Convert.ToInt64(reader.GetAttribute("value").Replace("T", "").Replace("-", "").Replace(" ", "").Replace(":", ""));
+                days[0].updateTime = (days[0].updateTime) - 40000 ;
+               
             }
             catch
             {
-                //resets to last city if the city isn't found
-                
+                //resets to last city if the city isn't found               
                 ExtractCurrent(location);
             }
         }

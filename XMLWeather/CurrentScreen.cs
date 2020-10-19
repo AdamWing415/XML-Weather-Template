@@ -29,7 +29,10 @@ namespace XMLWeather
             maxOutput.Text = Math.Round(Convert.ToDecimal(Form1.days[0].tempHigh)) + "°";
             humidValueLabel.Text = Form1.days[0].humidity + "%";
             windOutputLabel.Text = Math.Round(kmh) + " Km/h " + Form1.days[0].windDirection;
-            updateLabel.Text = "Last Updated: \n" + Form1.days[0].updateTime;
+            
+            //converts the est raw time to formatted time and display
+            updateLabel.Text = "Last Updated: \n" + Form1.days[0].updateTime.ToString("####-##-##   ##:##:##") + " EST"; 
+            
             conditionLabel.Text = Form1.days[0].condition;
 
             //sets the background image to match the conditions

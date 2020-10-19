@@ -244,7 +244,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::XMLWeather.Properties.Resources.foggy;
+            this.BackgroundImage = global::XMLWeather.Properties.Resources.Lightning;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.updateLabel);
