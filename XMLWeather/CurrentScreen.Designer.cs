@@ -54,7 +54,7 @@
             this.cityOutput.Location = new System.Drawing.Point(13, 69);
             this.cityOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cityOutput.Name = "cityOutput";
-            this.cityOutput.Size = new System.Drawing.Size(301, 33);
+            this.cityOutput.Size = new System.Drawing.Size(301, 47);
             this.cityOutput.TabIndex = 22;
             this.cityOutput.Text = "City";
             // 
@@ -63,7 +63,7 @@
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
             this.maxOutput.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxOutput.ForeColor = System.Drawing.Color.Red;
-            this.maxOutput.Location = new System.Drawing.Point(250, 95);
+            this.maxOutput.Location = new System.Drawing.Point(250, 107);
             this.maxOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(112, 51);
@@ -75,7 +75,7 @@
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
             this.minOutput.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minOutput.ForeColor = System.Drawing.Color.Turquoise;
-            this.minOutput.Location = new System.Drawing.Point(250, 143);
+            this.minOutput.Location = new System.Drawing.Point(250, 150);
             this.minOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(112, 50);
@@ -141,7 +141,7 @@
             this.conditionLabel.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel.ForeColor = System.Drawing.Color.White;
-            this.conditionLabel.Location = new System.Drawing.Point(212, 217);
+            this.conditionLabel.Location = new System.Drawing.Point(212, 206);
             this.conditionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.conditionLabel.Name = "conditionLabel";
             this.conditionLabel.Size = new System.Drawing.Size(127, 50);

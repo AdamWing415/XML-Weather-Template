@@ -255,7 +255,7 @@
         private System.Windows.Forms.Label LondonLabel;
         private System.Windows.Forms.Label TorontoLabel;
         private System.Windows.Forms.Label NiagaraLabel;
-        private System.Windows.Forms.TextBox SearchBox;
         private System.Windows.Forms.PictureBox SearchPicBox;
+        public System.Windows.Forms.TextBox SearchBox;
     }
 }

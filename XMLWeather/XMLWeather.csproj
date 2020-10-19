@@ -134,9 +134,6 @@
     <None Include="Resources\clear.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cloudy.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\foggy.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -155,9 +152,6 @@
     <None Include="Resources\clear%28blur%29.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cloudy%28blur%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\foggy%28blur%29.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +162,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\snow%28blur%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloudy%28blur%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloudy.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
